@@ -33,7 +33,7 @@ export class AddEditDepComponent implements OnInit {
       DepartmentName:this.DepartmentName};
       this.service.updateDepartment(val).subscribe(res=>{
       alert(res.toString());
-});
+      });
   }
 
 }

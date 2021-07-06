@@ -24,7 +24,7 @@ export class SharedService {
   }
 
   deleteDepartment(val:any){
-    return this.http.delete(this.APIUrl+'/Department'+val)
+    return this.http.delete(this.APIUrl+'/Department/'+val)
   }
 
   getEmpList():Observable<any>{
@@ -40,7 +40,7 @@ export class SharedService {
   }
 
   deleteEmployee(val:any){
-    return this.http.delete(this.APIUrl+'/Employee'+val)
+    return this.http.delete(this.APIUrl+'/Employee/'+val)
   }
 
   UploadPhoto(val:any){
